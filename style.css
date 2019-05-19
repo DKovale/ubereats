@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+header > section {
+    display: flex;
+    align-items: center;
+    height: 5em;
+  }
+
+header > section > div {
+    height: 4em;
+    line-height: 4em;
+    padding: 0;
+    overflow: hidden;
+}
+
+.logo > img {
+    width: 10em;
+    padding-top: 15px;
+}
+
+.logo {
+    text-align: center;
+    flex: 1 5 150px;
+   }
+
+.asap {
+     flex: 1 1 350px;
+     color: silver;
+     text-align: left;
+     font-size: 1.2em;
+    }
+
+.asap > input {
+    border: 1px solid #E0E0E0;
+    width: 4em;
+    height: 2.5em;
+    margin: 0 10px;
+    padding: 6px;
+    border-radius: 2px;
+    font-size: 1.1em;
+  }
+
+.asap > .address {
+    width: 14em;
+    height: 2,5em;
+    font-size: 1.1em;
+ }
+
+.sign {
+    flex: 1 1 190px;
+    font-size: 1.3em;
+    }
+
+   .sign > p{
+    display: inline;
+    border: 1px solid #E0E0E0;
+    margin: 6px;
+    padding: 12px;
+    border-radius: 2px;
+}
+
+.register {
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+}
+
+.sign > p:last-child {
+    height: 70px;
+    width: 90px;
+    border: 1px solid transparent;
+    margin: 0;
+    background-image: url(image/bb.png);
+     }
+
+.header__img {
+    width: 100%;
+    height: 440px;
+    background-color: silver;
+    background-image: url(image/fon.jpg);
+    background-size: cover;
+    background-position:center;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.img--block {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    top: 110px;
+    left: 100px;
+    border: 1px solid transparent;
+    position: absolute;
+}
+
+h1 {
+    border: 1px solid transparent;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 40px; 
+   }
+
+h1 + p {
+    color: gray;
+    float: left;
+    margin-left: 40px;
+   }
+
+.minutes {
+    width: 100px;
+    height: 30px;
+    padding-top: 5px;
+    margin-right: 40px;
+    margin-top: -2px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    float: right;
+    text-align: center;
+}
+
+nav {
+    border: 1px solid silver;
+    height: 5em;
+    width: 100%;
+    padding: 0;
+}
+
+nav > ul {
+     padding-top: 1.8em;
+}
+
+nav > ul > li {
+    font-size: 1.2em;
+    display: inline;
+    text-decoration: none;
+    margin-left: 2.5em;
+    color: #767676;
+    }
+
+nav > ul > li:first-child {
+     color: #3F7D3D;
+}
+
+h3 {
+    margin: 40px 0 0 90px;
+    width: 3.8em;
+   }
+
+h3 > div {
+    display: none;
+    border-bottom: 1px solid;
+    width: 50px;
+    margin: 0.7em auto;
+}
+
+.menu {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px 80px;
+   width: 100%;
+}
+
+.menu > div {
+    flex: 1 0 40%;
+    margin: 25px 10px;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid silver;
+    position: relative;
+}
+
+.menu > div > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 150px;
+}
+
+.menu > div:first-child {
+    background-color: #F9F9F9;
+}
+
+.menu > div > p {
+   color: #767676;
+   font-size: 0.8em;
+ }
+
+ .price {
+     margin-top: 80px;
+     border: 1px solid transparent;
+ }
+
+ footer {
+     width: 100%;
+     height: auto;
+     padding: 2.5em 5.8em;
+     background-color: #262626;
+     position: relative;
+ }
+
+ footer > img {
+     width: 15em;
+     margin-bottom: 2em;
+ }
+
+ .info {
+     display: flex;
+     width: 100%;
+     height: 12em;
+     margin-top: 2em;
+ }
+
+ .select {
+    flex: 1 1 0;
+    position: relative;
+    display: inline-block;
+}
+
+select {
+    width: 17em;
+    height: 4em;
+    padding-left: 40px;
+    background-color: #3B3B3B;
+    background-image: url(image/polsh.png);
+    background-position: 8% 58%;
+    background-repeat: no-repeat;
+    color: white;
+    padding-right: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+  .select:after {
+    content: "⌵";
+    font-size: 1.2em;
+    position: absolute;
+    color: white;
+    left: 203px;
+    top: 12px;
+    z-index: 1;
+    width: 10%;
+  }
+
+.hash-uber {
+    margin: 3em 0 2em 0;
+    color: white;
+}
+
+.hash-uber > span {
+    color: #40823D;
+}
+
+.about {
+    flex: 1 1 0;
+}
+
+.about > p {
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+}
+
+.pics > img {
+    flex: 0 1 14%;
+    margin: 2em 1.5em;
+    height: 3em;
+}
+
+.bottom {
+    display: flex;
+}
+.bottom > p {
+    margin-top: 1.5em;
+    flex: 1 1 15%;
+    color: white;
+    font-size: 0.8em;
+}
+
+button {
+    position: absolute;
+    bottom: 24px;
+    right: 20px;
+    width: 2.6em;
+    height: 2.5em;
+    background-color: #59BD5A;
+    color: white;
+    border-width: 0;
+    font-size: 2em;
+}
+
+  .select img {
+      width: 5.8em;
+  }
+
+@media (max-width: 960px) {
+
+    .logo > img {
+        width: 8em;
+        padding-top: 20px;
+    }
+
+    .asap, .sign {
+         font-size: 1em;
+      }
+
+    .header__img {
+       background-image: url(image/fon_md.jpg);       
+    }
+
+    .img--block {
+        left: 0;
+    }
+
+    nav > ul {
+    padding-left: 0.5em;
+    }
+
+    nav > ul > li {
+      margin-left: 2em;
+    }
+
+    nav > ul > li:first-child {
+        margin-left: 0;
+   }
+    
+    h3 {
+        margin-left: 10px;
+    }
+
+    .menu {
+        padding: 0;
+        }
+
+    .menu > div {
+        flex-basis: 100%;
+    }
+
+    article > section {
+        background-color: #F2F2F2;
+        border: 1px solid transparent;
+    }
+
+    .menu > div:first-child {
+        background-color: #EEEEEE;
+    }
+    
+    footer {
+        padding:2.5em 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .asap, nav, .sign > p:last-child {
+       display: none;
+    }
+
+    .img--block {
+        top: 200px;
+        left: 50%;
+        margin-left: -200px;
+    }
+
+    .header__img {
+        height: 355px;
+        background-image: url(image/fon_mob.jpg);       
+     }
+
+     h1 + p {
+        float: none;
+        margin-left: 135px;
+        }
+    
+    .minutes {
+        margin: auto;
+        margin-top: 20px;
+        float: none;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 80px auto 10px auto;
+    }
+
+    h3 > div {
+        display: block;
+   }
+
+   .menu > div {
+    margin: 10px 10px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid silver;
+  }
+
+    .info, .bottom {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer {
+        height: auto;
+    }
+    
+    .select img {
+       margin-bottom: 2em;
+    }
+}
