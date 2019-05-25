@@ -9,9 +9,9 @@
 </head>
 <body>
  <header>
-     <section>
+     <section class="header__section">
          <div class="logo"><img src="image/uber.png" alt=""/></div>
-         <div class="asap"><input placeholder="ASAP"></input>to<input class="address" placeholder="⊙ ul. Bolshaya Dmitrovka,22"></input></div>
+         <div class="asap"><input placeholder="ASAP"></input><span>to</span><input class="address" placeholder="⊙ ul. Bolshaya Dmitrovka,22"></input></div>
          <div class="sign"><p>Sign in</p>
             <p class="register">Register</p>
            <p></p>
@@ -19,8 +19,8 @@
      </section>
      <div class="header__img">
          <div class="img--block"> <h1>Трактир "Пушкин"</h1>
-              <p>&pound;&pound;&pound; &bull; Европейская</p>
-              <div class="minutes">40 - 50 Min</div>
+              <p class="block__price">&pound;&pound;&pound; &bull; Европейская</p>
+              <div class="block__minutes">40 - 50 Min</div>
          </div>
      </div>
 </header>
@@ -38,30 +38,60 @@
      <section>
          <h3>Закуски<div></div></h3>
          <div class="menu">
-            <div>Сельдь на бородинском хлебе
-                <p>С яйцом и огурцом</p>
-                <div class="price">240 &pound;</div>
-                <img src="image/1.png" alt=""/>
+            <div>
+                <div class="menu__left">
+                  <p>Сельдь на бородинском хлебе</p>
+                  <p class="text--add">С яйцом и огурцом</p>
+                  <div class="price">240 &pound;</div>
+                </div>
+                <div class="menu__right">
+                    <img src="image/1.png" alt=""/>                             
+                </div>
             </div>
-            <div>Соленья ассорти
-                <div class="price">320 &pound;</div>
-                <img src="image/2.png" alt=""/>
+            <div>
+                <div class="menu__left">
+                  <p>Соленья ассорти</p>
+                  <div class="price">320 &pound;</div>
+                </div>
+                <div class="menu__right">
+                  <img src="image/2.png" alt=""/>
+                </div>
             </div>
-            <div>Грибы маринованные
-                <div class="price">300 &pound;</div>
-                <img src="image/3.png" alt=""/>
+            <div>
+                <div class="menu__left">
+                  <p>Грибы маринованные</p>
+                  <div class="price">300 &pound;</div>
+                </div>
+                <div class="menu__right">
+                  <img src="image/3.png" alt=""/>
+                </div>
             </div>
-            <div>Сало домашнее с горчицей
-                <div class="price">320 &pound;</div>
-                <img src="image/4.png" alt=""/>
+            <div>
+                <div class="menu__left">
+                  <p>Сало домашнее с горчицей</p>
+                  <div class="price">320 &pound;</div>
+                </div>
+                <div class="menu__right">
+                  <img src="image/4.png" alt=""/>
             </div>
-            <div>Малосольная сёмга
-                <div class="eats">390 &pound;</div>
-                <img src="image/5.png" alt=""/>
             </div>
-            <div>Язык говяжий с хреном
-                <div class="price">350 &pound;</div>
-                <img src="image/6.png" alt=""/>
+            <div>
+                <div class="menu__left">
+                  <p>Малосольная сёмга</p>
+                  <div class="eats">390 &pound;</div>
+                </div>
+                <div class="menu__right">
+                  <img src="image/5.png" alt=""/>
+                </div>
+            </div>
+            <div>
+                <div class="menu__left">
+                  <p>Язык говяжий с хреном</p>
+                  <div class="price">350 &pound;</div>
+                </div>
+                <div class="menu__right">
+                  <img src="image/6.png" alt=""/>
+                </div>    
             </div>
          </div>
      </section>

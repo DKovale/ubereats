@@ -3,13 +3,13 @@
     margin: 0;
   }
 
-header > section {
+.header__section {
     display: flex;
     align-items: center;
     height: 5em;
   }
 
-header > section > div {
+.header__section > div {
     height: 4em;
     line-height: 4em;
     padding: 0;
@@ -88,6 +88,8 @@ header > section > div {
 }
 
 .img--block {
+    display: flex;
+    flex-wrap: wrap;
     width: 400px;
     height: 200px;
     background-color: white;
@@ -98,29 +100,29 @@ header > section > div {
 }
 
 h1 {
+    flex: 0 0 100%;
     border: 1px solid transparent;
     margin-top: 40px;
     text-align: center;
     font-weight: 400;
     margin-bottom: 40px; 
-   }
+    }
 
-h1 + p {
+.block__price {
+    flex: 0 0 40%;
     color: gray;
-    float: left;
     margin-left: 40px;
    }
 
-.minutes {
-    width: 100px;
+.block__minutes {
+    flex: 0 0 100px;
     height: 30px;
     padding-top: 5px;
-    margin-right: 40px;
+    margin-left: 40px;
     margin-top: -2px;
     background-color: black;
     color: white;
     border-radius: 20px;
-    float: right;
     text-align: center;
 }
 
@@ -170,15 +172,22 @@ h3 > div {
     flex: 1 0 40%;
     margin: 25px 10px;
     height: 150px;
-    padding: 15px;
+    padding: 0;
     border: 1px solid silver;
-    position: relative;
+    display: flex;
+ }
+
+.menu__left {
+   flex: 1 1 auto;
+   padding: 15px;
 }
 
-.menu > div > img {
-    position: absolute;
-    top: 0;
-    right: 0;
+.menu__right {
+    flex: 0 0 160px;
+      height: 100%;
+  }
+
+.menu__right img {
     height: 150px;
 }
 
@@ -186,14 +195,19 @@ h3 > div {
     background-color: #F9F9F9;
 }
 
-.menu > div > p {
+.text--add {
    color: #767676;
    font-size: 0.8em;
+   margin-top: 1em;
  }
 
  .price {
      margin-top: 80px;
      border: 1px solid transparent;
+ }
+
+ .menu > div:first-child .price {
+     margin-top: 55px;
  }
 
  footer {
@@ -303,7 +317,7 @@ button {
       width: 5.8em;
   }
 
-@media (max-width: 960px) {
+@media (max-width: 1124px) {
 
     .logo > img {
         width: 8em;
@@ -369,6 +383,9 @@ button {
         top: 200px;
         left: 50%;
         margin-left: -200px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
 
     .header__img {
@@ -376,15 +393,24 @@ button {
         background-image: url(image/fon_mob.jpg);       
      }
 
-     h1 + p {
-        float: none;
-        margin-left: 135px;
+     h1 {
+        padding-top: 30px;
+        margin-bottom: 0; 
+        margin-top: 0;
+        flex: 0 0 60%;
+
+     }
+
+     .block__price {
+        flex: 0 0 15%;
+        margin: auto;
         }
     
-    .minutes {
+    .block__minutes {
+        flex: 0 0 15%;
+        width: 100px;
         margin: auto;
-        margin-top: 20px;
-        float: none;
+        margin-bottom: 20px;
         text-align: center;
     }
 
