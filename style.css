@@ -301,8 +301,8 @@ select {
     font-size: 0.8em;
 }
 
-button {
-    position: absolute;
+.button-up {
+    position: fixed;
     bottom: 24px;
     right: 20px;
     width: 2.6em;
@@ -310,13 +310,18 @@ button {
     background-color: #59BD5A;
     color: white;
     border-width: 0;
+    border-radius: 7px;
     font-size: 2em;
+    transform: translateY(250px);
+    cursor: pointer;
+    opacity: 0.8;
 }
 
   .select img {
       width: 5.8em;
   }
 
+ 
 @media (max-width: 1124px) {
 
     .logo > img {
